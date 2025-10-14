@@ -4,6 +4,13 @@ public class ClockExt extends Clock {
 
     private int seconds;
 
+    public int getSeconds() {
+        return seconds;
+    }
+
+    public void setSeconds(int seconds) {
+        this.seconds = seconds;
+    }
 
     public ClockExt() {}
 

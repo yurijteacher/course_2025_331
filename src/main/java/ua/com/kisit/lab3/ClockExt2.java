@@ -28,13 +28,25 @@ public class ClockExt2 extends ClockExt{
     }
 
     public void nextMilliSecond() {
+
         milliseconds+=100;
 
         if(milliseconds>1000){
 
+            nextSeconds();
+            milliseconds=0;
             // ... Додати логіку роботи програми
 
         }
+    }
 
+    @Override
+    public String toString() {
+        return "ClockExt2{" +
+                "hour=" + getHour() +
+                ", minute=" + getMinute() +
+                ", seconds=" + getSeconds() +
+                ", milliseconds=" + milliseconds +
+                '}';
     }
 }

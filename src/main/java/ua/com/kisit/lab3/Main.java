@@ -9,7 +9,7 @@ public class Main {
 //        Timer timer = new Timer();
 //        timer.schedule(new MyClock(), 1000, 1000);
 
-        new ClockFrame();
+        new ClockFrame2();
 
 
     }

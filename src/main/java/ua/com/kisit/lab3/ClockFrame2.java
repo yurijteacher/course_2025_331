@@ -14,7 +14,7 @@ public class ClockFrame2 {
         panel = new JPanel();
         label = new JLabel();
 
-        frame.setSize(500,168);
+        frame.setSize(700,70);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         label.setFont(new Font("Arial", Font.BOLD, 20));
@@ -25,7 +25,7 @@ public class ClockFrame2 {
 
         ClockExt2 clockExt = new ClockExt2(12,06,30,00);
 
-        Timer timer = new Timer(1000, e -> {
+        Timer timer = new Timer(100, e -> {
             clockExt.nextMilliSecond();
             label.setText(clockExt.toString());
         });
