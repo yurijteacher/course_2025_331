@@ -22,4 +22,15 @@ public class Product {
 
     private Category category;
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", image='" + image + '\'' +
+                ", category=" + category.getName() +
+                '}';
+    }
 }
